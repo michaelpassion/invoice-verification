@@ -1,0 +1,34 @@
+DEBUG:selenium.webdriver.common.selenium_manager:Selenium Manager binary found at: /usr/local/lib/python3.9/site-packages/selenium/webdriver/common/macos/selenium-manager
+DEBUG:selenium.webdriver.common.selenium_manager:Executing process: /usr/local/lib/python3.9/site-packages/selenium/webdriver/common/macos/selenium-manager --browser chrome --debug --output json
+DEBUG:selenium.webdriver.common.selenium_manager:Found chromedriver 116.0.5845.14 in PATH: /usr/local/bin/chromedriver
+DEBUG:selenium.webdriver.common.selenium_manager:chrome detected at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+DEBUG:selenium.webdriver.common.selenium_manager:Running command: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version
+DEBUG:selenium.webdriver.common.selenium_manager:Output: "Google Chrome 116.0.5845.187 "
+DEBUG:selenium.webdriver.common.selenium_manager:Detected browser: chrome 116.0.5845.187
+DEBUG:selenium.webdriver.common.selenium_manager:Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+DEBUG:selenium.webdriver.common.selenium_manager:Required driver: chromedriver 116.0.5845.96
+DEBUG:selenium.webdriver.common.selenium_manager:Driver path: /usr/local/bin/chromedriver
+DEBUG:selenium.webdriver.common.selenium_manager:Browser path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+DEBUG:selenium.webdriver.common.selenium_manager:Using driver at: /usr/local/bin/chromedriver
+DEBUG:selenium.webdriver.common.service:Started executable: `/usr/local/bin/chromedriver` in a child process with pid: 30124
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:55277/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"extensions": [], "binary": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "args": []}}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:55277
+DEBUG:urllib3.connectionpool:http://localhost:55277 "POST /session HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"116.0.5845.187","chrome":{"chromedriverVersion":"116.0.5845.14 (1bcfc50259cdfd7eac59b26bdfccdecffc5d42a7-refs/branch-heads/5845@{#215})","userDataDir":"/var/folders/lp/bftwkl2911q_clxrmw_1j0xr0000gn/T/.org.chromium.Chromium.JRvbLl"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":":-1"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"d9d7d3335c7d09dc551b8bbb8a8610e6"}} | headers=HTTPHeaderDict({'Content-Length': '883', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:55277/session/d9d7d3335c7d09dc551b8bbb8a8610e6/url {"url": "file:////Users/michael/Develop/invoice-verification/http:/baidu.com"}
+DEBUG:urllib3.connectionpool:http://localhost:55277 "POST /session/d9d7d3335c7d09dc551b8bbb8a8610e6/url HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:55277/session/d9d7d3335c7d09dc551b8bbb8a8610e6/window/maximize {}
+DEBUG:urllib3.connectionpool:http://localhost:55277 "POST /session/d9d7d3335c7d09dc551b8bbb8a8610e6/window/maximize HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"height":777,"width":1280,"x":0,"y":23}} | headers=HTTPHeaderDict({'Content-Length': '50', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:55277/session/d9d7d3335c7d09dc551b8bbb8a8610e6/execute/sync {"script": "document.title='xxxxx';window.print();", "args": []}
+DEBUG:urllib3.connectionpool:http://localhost:55277 "POST /session/d9d7d3335c7d09dc551b8bbb8a8610e6/execute/sync HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://localhost:55277/session/d9d7d3335c7d09dc551b8bbb8a8610e6/window {}
+DEBUG:urllib3.connectionpool:http://localhost:55277 "DELETE /session/d9d7d3335c7d09dc551b8bbb8a8610e6/window HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
