@@ -1,0 +1,126 @@
+{
+    "VerifyFrequency": "4",
+    "words_result": {
+        "CommodityAmount": [
+            {
+                "word": "108.30",
+                "row": "1"
+            }
+        ],
+        "CarrierCode": "",
+        "CommodityNum": [
+            {
+                "word": "",
+                "row": "1"
+            }
+        ],
+        "ListLabel": "N",
+        "SenderCode": "",
+        "Carrier": "",
+        "VehicleTypeNum": "",
+        "TaxControlNum": "",
+        "PurchaserRegisterNum": "",
+        "TotalTax": "0.00",
+        "CommodityVehicleType": [
+            {
+                "row": "1",
+                "word": ""
+            }
+        ],
+        "CommodityTaxRate": [
+            {
+                "row": "1",
+                "word": "0%"
+            }
+        ],
+        "SellerAddress": "北京市西城区复兴门南大街6号,10010",
+        "CommodityEndDate": [
+            {
+                "word": "",
+                "row": "1"
+            }
+        ],
+        "CommodityPrice": [
+            {
+                "row": "1",
+                "word": ""
+            }
+        ],
+        "Checker": "",
+        "CommodityType": [
+            {
+                "row": "1",
+                "word": ""
+            }
+        ],
+        "Receiver": "",
+        "CommodityExpenseItem": [
+            {
+                "row": "1",
+                "word": ""
+            }
+        ],
+        "RecipientCode": "",
+        "PurchaserName": "尹帅",
+        "Sender": "",
+        "SellerRegisterNum": "911100008016572721",
+        "TransportCargoInformation": "",
+        "CommodityPlateNum": [
+            {
+                "row": "1",
+                "word": ""
+            }
+        ],
+        "TotalAmount": "108.30",
+        "SellerBank": "中国工商银行北京市长安支行 0200003319210012727",
+        "PurchaserAddress": "",
+        "Payee": "",
+        "Remarks": "18519518269；2023年7月",
+        "CommodityName": [
+            {
+                "word": "*电信服务*通信服务费",
+                "row": "1"
+            }
+        ],
+        "AmountInFiguers": "108.30",
+        "NoteDrawer": "",
+        "DepartureViaArrival": "",
+        "TollSign": "",
+        "Recipient": "",
+        "ESVATURL": "",
+        "VehicleTonnage": "",
+        "PurchaserBank": "",
+        "ReceiverCode": "",
+        "CommodityUnit": [
+            {
+                "word": "",
+                "row": "1"
+            }
+        ],
+        "CommodityStartDate": [
+            {
+                "row": "1",
+                "word": ""
+            }
+        ],
+        "CommodityTax": [
+            {
+                "row": "1",
+                "word": "0.00"
+            }
+        ],
+        "SellerName": "中国联合网络通信有限公司北京市分公司",
+        "ZeroTaxRateIndicator": ""
+    },
+    "MachineCode": "499099703309",
+    "InvoiceNum": "44917292",
+    "InvoiceDate": "20231127",
+    "VerifyResult": "0001",
+    "InvalidSign": "N",
+    "InvoiceCode": "011002301111",
+    "InvoiceType": "增值税普通发票（电子）",
+    "words_result_num": 45,
+    "CheckCode": "08520635991602350289",
+    "VerifyMessage": "查验成功发票一致",
+    "log_id": "1731503244902660973"
+}

@@ -5,7 +5,7 @@ import os
 import logging
 import string
 
-logging.basicConfig(filename='example.log', encoding='utf-8', level=logging.DEBUG)
+logging.basicConfig(level=logging.DEBUG)
 
 def create_chrome_options():
     chrome_options = Options()
@@ -23,21 +23,21 @@ def create_chrome_options():
     }
     prefs = {
         'printing.print_preview_sticky_settings.appState': json.dumps(settings),
-        'savefile.default_directory': '/Users/michael/Develop/tets/'  # 下载文件保存的路径
+        'savefile.default_directory': os.getcwd()  # 下载文件保存的路径
     }
     chrome_options.add_experimental_option('prefs', prefs)
     chrome_options.add_argument('--kiosk-printing') #静默打印，无需用户点击打印页面的确定按钮
     chrome_options.add_experimental_option('prefs', prefs)
     chrome_options.add_argument('--no-sandbox')
-    chrome_options.add_argument('--headless')
+    # chrome_options.add_argument('--headless')
     chrome_options.add_argument('--enable-print-browser')
     return chrome_options
 
 
 def save_webpage_to_pdf(url):
-    chrome_options = Options()
-  
+    chrome_options = create_chrome_options()
     driver = webdriver.Chrome(options=chrome_options)
+    
     if not url.startswith('http'):
         url = "file:///"+os.path.abspath(url)
     driver.get(url)
@@ -48,6 +48,6 @@ def save_webpage_to_pdf(url):
     driver.close() 
 
 if __name__ == '__main__':
-    save_webpage_to_pdf("http://baidu.com")
+    save_webpage_to_pdf("demo.html")
 
 
